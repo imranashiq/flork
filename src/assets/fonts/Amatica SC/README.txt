@@ -1,0 +1,3 @@
+A fun font for fun people! Amatica SC began as an offshoot of the popular Amatic SC family by Vernon Adams. Ben Nathan, an Israeli designer, added a Hebrew component and adjusted the Latin in many ways, particularly to widen the letter-spacing to better fit the Hebrew.
+
+The Amatica project is led by Ben Nathan, a type designer based in Tel Aviv, Israel. To contribute, see [github.com/hafontia/Amatica-sc](https://github.com/hafontia/Amatica-sc)
