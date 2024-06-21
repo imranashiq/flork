@@ -11,7 +11,7 @@ const Features = () => {
         alignItems: "center",
       }}
     >
-      <Container>
+      <Container className="appear">
         <Box
           sx={{
             display: "flex",
@@ -25,9 +25,9 @@ const Features = () => {
           <Box>
             <Typography
               sx={{
-                fontFamily: "Denk One",
+                fontFamily: "Luckiest Guy",
                 fontWeight: "400",
-                fontSize: "38px",
+                fontSize: { xs: "1rem", md: "2.4rem" },
                 lineHeight: "160%",
                 textAlign: "center",
                 color: "#fff",
@@ -44,13 +44,12 @@ const Features = () => {
               color: "#fff",
             }}
           />
-
           <Box>
             <Typography
               sx={{
-                fontFamily: "Denk One",
+                fontFamily: "Luckiest Guy",
                 fontWeight: "400",
-                fontSize: "38px",
+                fontSize: { xs: "1rem", md: "2.4rem" },
                 lineHeight: "160%",
                 textAlign: "center",
                 color: "#fff",
@@ -70,9 +69,9 @@ const Features = () => {
           <Box>
             <Typography
               sx={{
-                fontFamily: "Denk One",
+                fontFamily: "Luckiest Guy",
                 fontWeight: "400",
-                fontSize: "38px",
+                fontSize: { xs: "1rem", md: "2.4rem" },
                 lineHeight: "160%",
                 textAlign: "center",
                 color: "#fff",
@@ -93,9 +92,9 @@ const Features = () => {
           <Box>
             <Typography
               sx={{
-                fontFamily: "Denk One",
+                fontFamily: "Luckiest Guy",
                 fontWeight: "400",
-                fontSize: "38px",
+                fontSize: { xs: "1rem", md: "2.4rem" },
                 lineHeight: "160%",
                 textAlign: "center",
                 color: "#fff",

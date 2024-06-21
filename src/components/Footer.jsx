@@ -18,6 +18,7 @@ const Footer = () => {
           flexDirection: "column",
           alignItems: "center",
         }}
+        className="appear"
       >
         <Box
           className="footer_header"
@@ -50,9 +51,9 @@ const Footer = () => {
           sx={{
             textAlign: "center",
             fontFamily: "Poppins",
-            fontSize: { xs: "16px" },
+            fontSize: { xs: "1rem" },
             fontWeight: "500",
-            padding: { xs: "0rem 4rem", md: "0rem 10rem" },
+            padding: { xs: "0rem 1rem", md: "0rem 10rem" },
           }}
         >
           {" "}

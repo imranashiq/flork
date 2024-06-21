@@ -5,30 +5,43 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { useRef } from "react";
 
 const Contract = () => {
+  const textFieldRef = useRef(null);
+  const defaultText = "0x98d9278a04y01c6a59a9d7c1CD79f7788C6ADe08";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(defaultText);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+  };
   return (
-    <Container sx={{ margin: "3rem auto" }}>
-      <Typography sx={{ textAlign: "center" }} className="heading">
+    <Container sx={{ margin: "3rem auto" }} className="appear">
+      <Typography mb={2} sx={{ textAlign: "center" }} className="heading">
         CONTRACT
       </Typography>
       <TextField
+        inputRef={textFieldRef}
+        defaultValue={defaultText}
         fullWidth
-        value="0x98d9278a04y01c6a59a9d7c1CD79f7788C6ADe08"
         readOnly
         sx={{
-          border: "1px solid #000",
+          border: "2px solid #000",
+          boxShadow: "0px 4px 0px #000",
           borderRadius: "3rem",
-          fontSize: "2rem",
           "& .MuiOutlinedInput-root": {
-            fontSize: { xs: "2.4rem" },
-            fontFamily: "Denk One",
+            fontSize: { xs: "1rem", md: "2rem" },
+            fontFamily: "Red Hat Display",
+            fontWeight: "700",
           },
           "& .MuiOutlinedInput-notchedOutline": {
             border: "none",
           },
           "& .MuiOutlinedInput-input": {
-            padding: "1.2rem 2rem",
+            padding: { xs: "1rem", md: "1.2rem 2rem" },
           },
         }}
         InputProps={{
@@ -36,17 +49,23 @@ const Contract = () => {
             <InputAdornment position="end">
               <Button
                 sx={{
-                  background: "#000",
-                  color: "#fff",
-                  borderRadius: "3rem",
-                  fontFamily: "Denk One",
-                  fontSize: "2rem",
-                  padding: ".5rem 2rem",
+                  background: "#fff",
+                  color: "#000",
+                  fontFamily: "Red Hat Display",
+                  fontSize: { xs: "1rem", sm: "1.5rem", md: "2.3rem" },
+                  border: "2px solid #000",
+                  boxShadow: "0px 4px 0px #000",
+                  borderRadius: "4rem",
+                  padding: {
+                    xs: "0rem .5rem",
+                    sm: "0rem 1rem",
+                    md: "0rem 2rem",
+                  },
                   ":hover": {
-                    color: "#000",
-                    background: "#999",
+                    boxShadow: "0px 4px 0px #fff",
                   },
                 }}
+                onClick={() => handleCopy()}
               >
                 Copy
               </Button>

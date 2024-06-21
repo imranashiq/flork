@@ -16,18 +16,17 @@ const Join = () => {
         position: "relative",
         overflow: "hidden",
         height: "100vh",
-        maxHeight: "790px",
+        maxHeight: { xs: "90vh", sm: "690px", md: "790px" },
       }}
     >
-      <Container className="container">
+      <Container className="container appear">
         <Box>
           <Typography
             sx={{
               color: "#000",
               textAlign: "center",
-              fontSize: { xs: "24px", md: "48px" },
-              fontFamily: "Denk One",
-              textShadow: "0px 7px 8.2px rgba(0, 0, 0, 0.31)",
+              fontSize: { xs: "24px", sm: "36px", md: "48px" },
+              fontFamily: "Luckiest Guy",
             }}
           >
             Ready for a Cooler Crypto Experience?
@@ -40,10 +39,27 @@ const Join = () => {
             flexDirection: "column",
             alignItems: "center",
             gap: "2rem",
-            margin: { xs: "5rem 0rem" },
+            margin: { xs: "3rem 0rem", sm: "4rem 0rem", md: "5rem 0rem" },
           }}
         >
-          <Button className="btn_primary" sx={{ fontFamily: "Century Gothic" }}>
+          <Button
+            sx={{
+              fontFamily: "Luckiest Guy",
+              background: "#fff",
+              border: "2px solid #000",
+              boxShadow: "0px 4px 0px #000",
+              padding: { xs: ".5rem", sm: "1rem", md: "2rem" },
+              borderRadius: "5rem",
+              color: "#000",
+              fontSize: { xs: "1rem", sm: "1.5rem", md: "2.3rem" },
+              lineHeight: "62%",
+              letterSpacing: ".2em",
+              ":hover": {
+                background: "#fff",
+                boxShadow: "0px 4px 0px #fff",
+              },
+            }}
+          >
             JOIN FLORK COMMUNITY
           </Button>
           <Box sx={{ display: "flex", alignItems: "center", gap: "2rem" }}>
@@ -52,24 +68,22 @@ const Join = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                boxShadow: "5px 11px 8px rgba(0,0,0, .33)",
+                borderRadius: "5rem",
               }}
             >
               <img width="100%" src={image5} alt="" />
-              <Typography sx={{ fontFamily: "Denk One", fontSize: "24px" }}>
-                Uniswap
-              </Typography>
             </Box>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                boxShadow: "5px 11px 8px rgba(0,0,0, .33)",
+                borderRadius: "5rem",
               }}
             >
               <img width="100%" src={image6} alt="" />
-              <Typography sx={{ fontFamily: "Denk One", fontSize: "24px" }}>
-                Etherscan
-              </Typography>
             </Box>
           </Box>
         </Box>

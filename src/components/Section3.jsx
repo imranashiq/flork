@@ -1,14 +1,14 @@
 import { Box } from "@mui/system";
 import image4 from "../assets/4.png";
-import { Container, Typography } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 
 const Section3 = () => {
   return (
     <Box
-      className="spotMain_wrapper"
+      className="spotMain_wrapper appear"
       sx={{
-        height: { xs: "80vh", md: "130vh" },
-        maxHeight: { xs: "490px", md: "990px" },
+        height: { xs: "60vh", sm: "100vh", md: "130vh" },
+        maxHeight: { xs: "490px", sm: "690px", md: "990px" },
         display: "flex",
         justifyContent: "center",
         alignItems: { xs: "flex-start", md: "center" },
@@ -17,32 +17,37 @@ const Section3 = () => {
       }}
     >
       <Container>
-        <Box className="spotText_wrapper" sx={{ padding: "0rem 3rem" }}>
+        <Stack
+          direction="column"
+          spacing={{ xs: 2, sm: 3, md: 4 }}
+          className="spotText_wrapper"
+          sx={{ padding: { md: "0rem 3rem", sm: "0rem 5rem" } }}
+        >
           <Typography
             sx={{
-              fontSize: { xs: "1.3rem", md: "3.2rem" },
+              fontSize: { xs: "1.3rem", sm: "2rem", md: "3rem" },
               lineHeight: "160%",
-              fontFamily: "Denk One",
+              fontFamily: "Luckiest Guy",
               color: "#000",
               textAlign: { xs: "center", md: "left" },
-              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
           >
             Join Us and Relax, Your Spot is Reserved
           </Typography>
           <Typography
             sx={{
-              fontFamily: "Denk One",
-              color: "#464646",
+              fontFamily: "Red Hat Display",
+              color: "#000",
               lineHeight: "160%",
+              fontWeight: "700",
               textAlign: { xs: "center", md: "left" },
-              fontSize: { xs: "1.3rem", md: "2rem" },
+              fontSize: { xs: "1rem", sm: "1.6rem", md: "2.5" },
             }}
           >
-            Tired of the heat from other coins? Swap stress for fun with us—your
-            spot is ready!
+            Tired of the heat from other coins? Swap <br /> stress for fun with
+            us—your spot is ready!
           </Typography>
-        </Box>
+        </Stack>
       </Container>
       <Box
         className="spotImage_wrapper"

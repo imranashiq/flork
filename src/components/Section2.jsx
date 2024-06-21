@@ -6,12 +6,12 @@ const Section2 = ({ heading, text, img }) => {
     <Container
       sx={{
         height: "100vh",
-        maxHeight: { xs: "690px", md: "790px" },
+        maxHeight: { xs: "550px", sm: "650px", md: "790px" },
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
-      className="container"
+      className="container appear"
     >
       <Grid container spacing={4}>
         <Grid
