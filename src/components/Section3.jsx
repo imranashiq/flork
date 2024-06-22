@@ -7,13 +7,12 @@ const Section3 = () => {
     <Box
       className="spotMain_wrapper appear"
       sx={{
-        height: { xs: "60vh", sm: "100vh", md: "130vh" },
+        height: { xs: "50vh", sm: "100vh", md: "130vh" },
         maxHeight: { xs: "490px", sm: "690px", md: "990px" },
-        display: "flex",
-        justifyContent: "center",
-        alignItems: { xs: "flex-start", md: "center" },
+        maxWidth: "1200px",
         position: "relative",
         overflow: "hidden",
+        margin: "0rem auto",
       }}
     >
       <Container>
@@ -21,15 +20,16 @@ const Section3 = () => {
           direction="column"
           spacing={{ xs: 2, sm: 3, md: 4 }}
           className="spotText_wrapper"
-          sx={{ padding: { md: "0rem 3rem", sm: "0rem 5rem" } }}
+          sx={{ padding: { md: "0rem 1rem", sm: "0rem 5rem" } }}
         >
           <Typography
             sx={{
               fontSize: { xs: "1.3rem", sm: "2rem", md: "3rem" },
-              lineHeight: "160%",
+              lineHeight: "118%",
               fontFamily: "Luckiest Guy",
               color: "#000",
               textAlign: { xs: "center", md: "left" },
+              letterSpacing: ".2em",
             }}
           >
             Join Us and Relax, Your Spot is Reserved
@@ -49,15 +49,13 @@ const Section3 = () => {
           </Typography>
         </Stack>
       </Container>
-      <Box
-        className="spotImage_wrapper"
-        sx={{
-          position: "absolute",
-          top: { md: "30px" },
-          bottom: { xs: "50px" },
-        }}
-      >
-        <img width="100%" src={image4} alt="" />
+      <Box className="spotImage_wrapper">
+        <img
+          width="100%"
+          style={{ objectFit: "contain" }}
+          src={image4}
+          alt=""
+        />
       </Box>
     </Box>
   );

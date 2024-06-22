@@ -63,7 +63,7 @@
 .appear {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 30%;
+  animation-range: entry 10%;
 }
 
 @keyframes autoRun {
@@ -83,11 +83,18 @@
     font-size: 1rem !important;
   }
   .text1 {
+    /* Meet */
     position: absolute;
-    top: -6rem;
-    left: 2rem;
-    font-size: 4rem !important;
+    left: 50px;
+    top: -50px;
     font-family: "Luckiest Guy" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    line-height: 118% !important;
+    /* identical to box height, or 71px */
+    letter-spacing: 0.2em !important;
+    color: #000000;
   }
   .slider {
     background: #ffffff;
@@ -132,7 +139,7 @@
     line-height: 118% !important;
     /* or 71px */
     letter-spacing: 0.2em !important;
-
+    text-align: center;
     color: #000000;
   }
   .text {
@@ -143,7 +150,7 @@
     font-size: 1rem !important;
     line-height: 160% !important;
     /* or 66px */
-
+    text-align: center;
     color: #000000;
 
     /* Inside auto layout */
@@ -195,11 +202,18 @@
     padding: 0.5rem 2rem !important;
   }
   .text1 {
+    /* Meet */
     position: absolute;
-    top: -7rem;
-    left: 5rem;
-    font-size: 5rem !important;
-    font-family: "Luckiest Guy", cursive !important;
+    left: 120px;
+    top: -80px;
+    font-family: "Luckiest Guy" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 60px !important;
+    line-height: 118% !important;
+    /* identical to box height, or 71px */
+    letter-spacing: 0.2em !important;
+    color: #000000;
   }
   .image_Wrapper {
     width: 80%;
@@ -290,6 +304,11 @@
     position: absolute;
     bottom: -20px;
     left: 0px;
+  }
+  .appear {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 10%;
   }
 }
 

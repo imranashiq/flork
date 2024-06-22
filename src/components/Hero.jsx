@@ -9,7 +9,7 @@ const Hero = () => {
         className="container"
         sx={{
           height: "100vh",
-          maxHeight: { xs: "350px", sm: "590px", md: "790px" },
+          maxHeight: { xs: "290px", sm: "440px", md: "520px" },
         }}
       >
         <Box className="main_Wrapper">
@@ -53,7 +53,7 @@ const Hero = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 position: "relative",
-                bottom: { xs: "-1.4rem", sm: "-1.8rem", md: "-3.1rem" },
+                bottom: { xs: "-1.1rem", sm: "-1.9rem", md: "-3.1rem" },
                 zIndex: 999,
                 mixBlendMode: "multiply",
               }}

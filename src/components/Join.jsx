@@ -48,7 +48,7 @@ const Join = () => {
               background: "#fff",
               border: "2px solid #000",
               boxShadow: "0px 4px 0px #000",
-              padding: { xs: ".5rem", sm: "1rem", md: "2rem" },
+              padding: { xs: "1rem", sm: "1.2rem", md: "2rem" },
               borderRadius: "5rem",
               color: "#000",
               fontSize: { xs: "1rem", sm: "1.5rem", md: "2.3rem" },
