@@ -82,6 +82,9 @@
     padding: 0.3rem 1.3rem !important;
     font-size: 1rem !important;
   }
+  .flork_image {
+    bottom: -0.9rem;
+  }
   .text1 {
     /* Meet */
     position: absolute;
@@ -173,6 +176,11 @@
   .footer_header::after {
     width: 28%;
   }
+  .appear {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -183,6 +191,9 @@
   .image_Wrapper {
     width: 40%;
   }
+  .flork_image {
+    bottom: -1.1rem;
+  }
   .heading {
     text-align: center;
     font-size: 26px !important;
@@ -192,10 +203,18 @@
     font-size: 16px !important;
   }
 }
+@media screen and (min-width: 600px) {
+  .flork_image {
+    bottom: -1.6rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     height: 100vh;
     max-height: 790px;
+  }
+  .flork_image {
+    bottom: -2rem;
   }
   .btn_primary {
     font-size: 1.5rem !important;
@@ -245,11 +264,23 @@
     width: 775px;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .flork_image {
+    bottom: -2.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flork_image {
+    bottom: -3.1rem !important;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container {
     height: 100vh;
     max-height: 790px;
+  }
+  .flork_image {
+    bottom: -3.1rem;
   }
   .btn_primary {
     font-size: 1.5rem !important;

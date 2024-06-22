@@ -16,7 +16,7 @@ const Join = () => {
         position: "relative",
         overflow: "hidden",
         height: "100vh",
-        maxHeight: { xs: "90vh", sm: "690px", md: "790px" },
+        maxHeight: { xs: "100vh", sm: "690px", md: "790px" },
       }}
     >
       <Container className="container appear">

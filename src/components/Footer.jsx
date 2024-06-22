@@ -61,7 +61,7 @@ const Footer = () => {
           recognized. FLORK is a meme coin that holds no intrinsic value and
           should not be expected to provide a financial return. There is no
           formal team or development roadmap; the coin is entirely useless and
-          intended for entertainme
+          intended for entertainment
         </Typography>
         <Box mt={4}>
           <Typography>Designed with ❤️</Typography>

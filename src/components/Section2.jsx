@@ -6,7 +6,7 @@ const Section2 = ({ heading, text, img }) => {
     <Container
       sx={{
         height: "100vh",
-        maxHeight: { xs: "550px", sm: "650px", md: "790px" },
+        maxHeight: { xs: "500px", sm: "650px", md: "790px" },
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

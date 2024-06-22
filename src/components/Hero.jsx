@@ -53,10 +53,10 @@ const Hero = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 position: "relative",
-                bottom: { xs: "-1.1rem", sm: "-1.9rem", md: "-3.1rem" },
                 zIndex: 999,
                 mixBlendMode: "multiply",
               }}
+              className="flork_image"
             >
               <Typography className="text1">Meet</Typography>
               <img className="heroImg" src={heroImg} alt="" />

@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 
 const Features = () => {
   return (
@@ -12,17 +12,17 @@ const Features = () => {
       }}
     >
       <Container className="appear">
-        <Box
+        <Grid
+          spacing={2}
+          container
           sx={{
             display: "flex",
-            gap: "3rem",
             alignItems: "center",
             justifyContent: "center",
-            padding: "1rem 2rem",
-            flexWrap: "wrap",
+            padding: { xs: "1rem 0rem", md: "1rem 2rem" },
           }}
         >
-          <Box>
+          <Grid item xs={5} md={2}>
             <Typography
               sx={{
                 fontFamily: "Luckiest Guy",
@@ -35,7 +35,7 @@ const Features = () => {
             >
               Tax <br /> 0%
             </Typography>
-          </Box>
+          </Grid>
           <Divider
             sx={{
               width: "2px",
@@ -44,7 +44,7 @@ const Features = () => {
               color: "#fff",
             }}
           />
-          <Box>
+          <Grid item xs={5} md={3}>
             <Typography
               sx={{
                 fontFamily: "Luckiest Guy",
@@ -57,16 +57,17 @@ const Features = () => {
             >
               CA <br /> renounced
             </Typography>
-          </Box>
+          </Grid>
           <Divider
             sx={{
               width: "2px",
               height: "1.5rem",
               background: "#fff",
               color: "#fff",
+              display: { xs: "none", md: "block" },
             }}
           />
-          <Box>
+          <Grid item xs={5} md={3}>
             <Typography
               sx={{
                 fontFamily: "Luckiest Guy",
@@ -80,7 +81,7 @@ const Features = () => {
               {" "}
               Liquidity <br /> Burned
             </Typography>
-          </Box>
+          </Grid>
           <Divider
             sx={{
               width: "2px",
@@ -89,7 +90,7 @@ const Features = () => {
               color: "#fff",
             }}
           />
-          <Box>
+          <Grid item xs={5} md={3}>
             <Typography
               sx={{
                 fontFamily: "Luckiest Guy",
@@ -102,8 +103,8 @@ const Features = () => {
             >
               Total supply <br /> 1B
             </Typography>
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
